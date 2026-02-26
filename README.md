@@ -14,8 +14,10 @@
 
 **Goal:** Establish a fast, modern, reproducible development environment without legacy friction.
 
-### 0.1 Python Installation & Version Management
-- Why Python 3.11+ / 3.12 is ideal in 2026 for speed and latest LLM compatibility
+### 0.1 Python Dev Setup
+- GitHub Codespaces + devcontainer.json (pre-configured uv, Ollama, FastAPI)
+- VS Code extensions: Ruff, Continue.dev, Docker
+- Docker basics: When to containerize MCP servers or agents
 
 ### 0.2 Package & Dependency Management in 2026
 - **Traditional pip + venv:** When it's still useful (simple scripts, legacy)
@@ -33,10 +35,6 @@
 - **Property-based testing:** For structured outputs
 - **Locust:** Basic load testing of FastAPI endpoints
 
-### 0.5 Recommended Dev Setup
-- GitHub Codespaces + devcontainer.json (pre-configured uv, Ollama, FastAPI)
-- VS Code extensions: Ruff, Continue.dev, Docker
-- Docker basics: When to containerize MCP servers or agents
 
 **Duration:** 1–2 sessions (theory + hands-on setup)
 
