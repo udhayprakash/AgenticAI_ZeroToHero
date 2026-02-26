@@ -1,0 +1,63 @@
+{
+  "name": "AgenticAI Development Environment",
+//   "hostRequirements": {
+//     "cpus": 4,          // Minimum 4 cores (good balance; 2 is often too slow for Ollama inference)
+//     "memory": "16gb",   // Strongly recommended — 8GB is marginal for 8B models; 16GB gives breathing room
+//     "storage": "32gb"   // Plenty for models, uv cache, git, etc. (default is usually 32GB anyway)
+//   },
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "charliermarsh.ruff",
+        "ms-vscode-remote.remote-containers",
+        "ms-docker.docker",
+        "astral-sh.uv",
+        "ms-python.debugpy"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "${containerEnv:HOME}/.venv/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.ruffEnabled": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "[python]": {
+          "editor.formatOnSave": true,
+          "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit"
+          }
+        }
+      }
+    }
+  },
+  "forwardPorts": [8000, 8080, 11434],
+  "portsAttributes": {
+    "8000": {
+      "label": "FastAPI Server",
+      "onAutoForward": "notify"
+    },
+    "8080": {
+      "label": "API",
+      "onAutoForward": "notify"
+    },
+    "11434": {
+      "label": "Ollama",
+      "onAutoForward": "notify"
+    }
+  },
+  "remoteUser": "vscode",
+  "remoteEnv": {
+    "PYTHONUNBUFFERED": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "postStartCommand": "bash .devcontainer/post-start.sh"
+}
