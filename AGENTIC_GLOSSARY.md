@@ -1,0 +1,29 @@
+# Agentic AI Glossary — One‑Liners (Alphabetical)
+
+- **Agent:** A software entity that senses, reasons, and takes actions on behalf of a user or system.
+- **Agentic AI:** Systems that combine autonomy, tool access, and long-running reasoning to complete tasks.
+- **Adapter / Bridge:** Integration layer that connects agent frameworks to external tools or MCP servers.
+- **Containerization (Docker):** Packaging and isolating services so agents and MCPs run consistently across environments.
+- **Devcontainer / Codespaces:** Reproducible development environments for VS Code and GitHub Codespaces.
+- **LCEL (LangChain Expression Language):** Declarative language used to describe agent behavior and tool orchestration.
+- **LangChain:** Framework for composing prompts, tools, and chains to build agentic applications.
+- **LangFlow:** Visual editor for composing and testing agent pipelines with drag‑and‑drop nodes.
+- **LangGraph:** Workflow/graph system for connecting nodes that represent model calls, tools, and data transforms.
+- **Least-Privilege:** Security principle: give agents and tools only the minimum permissions they require.
+- **LiteLLM:** Lightweight runtime or adapter for efficient local model inference and fast prototyping.
+- **LLM (Large Language Model):** A statistical model trained on large corpora to generate and understand language.
+- **Locust:** Load‑testing tool for measuring API and agent performance under concurrent traffic.
+- **MCP (Model Context Protocol):** Standard protocol for exposing tools and contextual data to agents.
+- **MCP Server:** A service implementing MCP to provide bounded capabilities (file access, DB queries, web calls).
+- **Model Runtime (e.g., Ollama):** Local or hosted infrastructure that runs models for inference with low latency.
+- **Mocking:** Replacing external dependencies (models, APIs, tools) with controllable fakes during tests.
+- **OpenRouter:** Routing layer or service used to failover or proxy requests to remote models when needed.
+- **Plausible Structured Output / Schema Validation:** Enforcing structured, machine‑readable outputs from models using schema validation tools (e.g., Pydantic in Python).
+- **Sandboxing:** Running agents/tools in restricted environments to reduce risk and contain side effects.
+- **Tool:** Any callable capability provided to an agent (search, database query, code execution, etc.).
+- **Traceability / Audit Logging:** Recording agent actions, tool calls, and decisions for debugging and compliance.
+- **Test & Quality:** Practices (unit tests, mocking, property tests, load tests) that ensure agents behave reliably.
+- **Uptime & Health Checks:** Automated checks and readiness probes to ensure MCPs and agent services are available.
+- **Structured Output:** Forcing model responses into strict, validated formats (JSON/schema) to make outputs deterministic and parsable.
+- **vLLM:** High-throughput, memory-efficient inference engine for running language models locally with optimized batching and serving.
+- **Visual LLM:** Models that combine language understanding with visual input/output capabilities.
