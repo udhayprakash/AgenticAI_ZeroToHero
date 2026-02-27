@@ -1,5 +1,9 @@
 # AgenticAI_ZeroToHero – Revised Course Outline (2026 Edition)
 
+> 🚀 **Quick Start with GitHub Codespaces:** Click the green **Code** button and select **Codespaces** to have a fully configured development environment in seconds!
+>
+> 📍 **Dev Environment:** See [`.devcontainer/`](.devcontainer/) for the development container configuration.
+
 **Theme:** The "Zero-Cost" Professional Stack for Autonomous, Reliable Agentic AI
 
 **Focus:** Local-first development, MCP standardization, LangGraph reliability, production-grade practices
